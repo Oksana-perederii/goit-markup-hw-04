@@ -184,6 +184,7 @@ img {
   cursor: pointer;
   font-size: 16px;
   line-height: 1.8;
+  letter-spacing: 0.06em;
 
   display: block;
   padding: 10px 32px;
@@ -232,12 +233,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-
-.feature-box:hover,
-.feature-box:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .feature-title {
   display: flex;
   font-weight: bold;
@@ -377,18 +372,13 @@ img {
   align-items: center;
 }
 
-.team-item:hover .team-link {
+.team-link:hover,
+.team-link:focus {
   border-radius: 50%;
   background-color: var(--accent-text-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   fill: var(--basic-bcg-color);
 }
-/* {
-  border-radius: 50%;
-  background-color: var(--accent-text-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  fill: var(--basic-bcg-color);
-} */
+
 /* clients */
 .client-section {
   padding: 94px 0;
@@ -424,12 +414,10 @@ img {
   align-items: center;
   width: 100%;
   height: 100%;
-}
-.clients-icon {
   fill: var(--icon-color);
 }
-.clients-icon:hover,
-.clients-icon:focus {
+.clients-link:hover,
+.clients-link:focus {
   fill: var(--accent-text-color);
 }
 
@@ -511,7 +499,7 @@ img {
 
 .footer-title {
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
@@ -520,7 +508,6 @@ img {
 .social-list {
   display: flex;
   gap: 10px;
-  /* margin-top: 20px; */
 }
 
 .social-item {
@@ -539,12 +526,8 @@ img {
   fill: var(--primary-text-color);
 }
 
-.social-item:hover .social-link {
-  border-radius: 50%;
-  background-color: var(--accent-text-color);
-}
-
-.social-item:focus .social-link {
+.social-link:hover,
+.social-link:focus {
   border-radius: 50%;
   background-color: var(--accent-text-color);
 }
@@ -600,13 +583,13 @@ img {
   flex-direction: column;
 }
 
-.portfolio-block:hover,
-.portfolio-block:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.list.link {
+.portfolio-link {
   text-decoration: none;
   padding: 0;
   margin: 0;
